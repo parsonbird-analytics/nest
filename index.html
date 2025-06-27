@@ -3,10 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
     <title>Parsonbird Analytics - Clear insights for better decisions</title>
     <style>
         * {
@@ -16,10 +12,10 @@
         }
         
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #e2e8f0;
-            background: #0f172a;
+            background: #000000;
             overflow-x: hidden;
         }
         
@@ -36,7 +32,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            background: linear-gradient(135deg, #404040 0%, #1a1a1a 50%, #2d2d2d 100%);
             z-index: -1;
         }
         
@@ -48,10 +44,11 @@
             width: 100%;
             height: 100%;
             background: 
-                radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 75% 75%, rgba(147, 51, 234, 0.1) 0%, transparent 50%);
+                radial-gradient(circle at 25% 25%, rgba(34, 197, 94, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(21, 128, 61, 0.03) 0%, transparent 50%);
             animation: float 6s ease-in-out infinite;
         }
+
         
         @keyframes float {
             0%, 100% { transform: translate(0, 0) rotate(0deg); }
@@ -62,7 +59,7 @@
         /* Header */
         .header {
             position: relative;
-            background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.95) 100%);
+            background: linear-gradient(135deg, rgba(10, 18, 10, 0.95) 0%, rgba(15, 31, 15, 0.95) 100%);
             backdrop-filter: blur(10px);
             color: white;
             padding: 5rem 0;
@@ -70,12 +67,25 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
         
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://www.notion.so/image/attachment%3Aa274992c-6eff-4c7b-aae0-16e5e57a9c1e%3A20250621_160234.jpg?id=21633636-cec7-802f-b7af-000bb7c2a379&table=collection&spaceId=06233636-cec7-81c8-b2b5-0003b8062595&width=2000&userId=215d872b-594c-81cb-b53b-00028a0a26ae&cache=v2');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+        
         .logo {
             font-size: 3rem;
             font-weight: 800;
             margin-bottom: 0.5rem;
             letter-spacing: -0.02em;
-            background: linear-gradient(135deg, #60a5fa 0%, #a855f7 100%);
+            background: linear-gradient(135deg, #22c55e 0%, #15803d 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -107,7 +117,7 @@
         
         .intro {
             text-align: center;
-            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
         }
         
         .intro h2 {
@@ -140,7 +150,7 @@
         }
         
         .service-card {
-            background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(51, 65, 85, 0.6) 100%);
+            background: linear-gradient(135deg, rgba(15, 31, 15, 0.8) 0%, rgba(26, 46, 26, 0.6) 100%);
             backdrop-filter: blur(10px);
             padding: 2.5rem;
             border-radius: 20px;
@@ -166,7 +176,7 @@
         }
         
         .service-card:hover {
-            border-color: rgba(96, 165, 250, 0.3);
+            border-color: rgba(34, 197, 94, 0.3);
             box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.3);
         }
         
@@ -175,7 +185,7 @@
             height: 80px;
             margin-bottom: 1.5rem;
             border-radius: 12px;
-            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -197,7 +207,7 @@
         
         /* Dashboard Examples */
         .examples {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            background: linear-gradient(135deg, #0a120a 0%, #1a1a1a 100%);
         }
         
         .examples h2 {
@@ -215,7 +225,7 @@
         }
         
         .dashboard-card {
-            background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(51, 65, 85, 0.7) 100%);
+            background: linear-gradient(135deg, rgba(15, 31, 15, 0.9) 0%, rgba(26, 46, 26, 0.7) 100%);
             backdrop-filter: blur(15px);
             border-radius: 20px;
             overflow: hidden;
@@ -231,10 +241,10 @@
         .dashboard-image {
             width: 100%;
             height: 220px;
-            background: linear-gradient(45deg, #1e293b 25%, rgba(51, 65, 85, 0.8) 25%), 
-                        linear-gradient(-45deg, #1e293b 25%, rgba(51, 65, 85, 0.8) 25%), 
-                        linear-gradient(45deg, rgba(51, 65, 85, 0.8) 75%, #1e293b 75%), 
-                        linear-gradient(-45deg, rgba(51, 65, 85, 0.8) 75%, #1e293b 75%);
+            background: linear-gradient(45deg, #1a1a1a 25%, rgba(26, 46, 26, 0.8) 25%), 
+                        linear-gradient(-45deg, #1a1a1a 25%, rgba(26, 46, 26, 0.8) 25%), 
+                        linear-gradient(45deg, rgba(26, 46, 26, 0.8) 75%, #1a1a1a 75%), 
+                        linear-gradient(-45deg, rgba(26, 46, 26, 0.8) 75%, #1a1a1a 75%);
             background-size: 30px 30px;
             background-position: 0 0, 0 15px, 15px -15px, -15px 0px;
             display: flex;
@@ -254,7 +264,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(45deg, rgba(96, 165, 250, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
+            background: linear-gradient(45deg, rgba(34, 197, 94, 0.08) 0%, rgba(21, 128, 61, 0.08) 100%);
             animation: pulse 3s ease-in-out infinite;
         }
         
@@ -282,7 +292,7 @@
         /* About */
         .about {
             text-align: center;
-            background: linear-gradient(135deg, #334155 0%, #475569 100%);
+            background: linear-gradient(135deg, #2d2d2d 0%, #404040 100%);
         }
         
         .about h2 {
@@ -302,7 +312,7 @@
         
         /* Contact */
         .contact {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            background: linear-gradient(135deg, #0a120a 0%, #1a1a1a 100%);
             color: white;
             text-align: center;
             position: relative;
@@ -316,8 +326,8 @@
             right: 0;
             bottom: 0;
             background: 
-                radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(168, 85, 247, 0.05) 0%, transparent 50%);
+                radial-gradient(circle at 20% 80%, rgba(34, 197, 94, 0.02) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(21, 128, 61, 0.02) 0%, transparent 50%);
             animation: float 8s ease-in-out infinite;
         }
         
@@ -349,7 +359,7 @@
         .btn {
             display: inline-block;
             padding: 1.2rem 2.5rem;
-            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
             color: white;
             text-decoration: none;
             border-radius: 12px;
@@ -378,7 +388,7 @@
         
         .btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 35px rgba(59, 130, 246, 0.4);
+            box-shadow: 0 15px 35px rgba(22, 163, 74, 0.4);
         }
         
         .btn-secondary {
@@ -395,7 +405,7 @@
         
         /* Footer */
         .footer {
-            background: #020617;
+            background: #051005;
             color: white;
             text-align: center;
             padding: 2.5rem 0;
